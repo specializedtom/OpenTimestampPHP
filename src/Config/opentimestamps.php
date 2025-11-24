@@ -1,0 +1,21 @@
+// opentimestamps.php
+<?php
+
+return [
+    'calendar' => [
+        'servers' => [
+            'https://a.pool.opentimestamps.org',
+            'https://b.pool.opentimestamps.org'
+        ],
+        'timeout' => 20,
+        'max_retries' => 2
+    ],
+    'verification' => [
+        'strictness' => 'high',
+        'min_confidence_score' => 0.8
+    ],
+    'logging' => [
+        'level' => 'info',
+        'file' => '/var/log/opentimestamps.log'
+    ]
+];
